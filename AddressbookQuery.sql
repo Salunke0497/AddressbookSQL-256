@@ -29,7 +29,13 @@ VALUES('Amol','Salunke','Location','Mumbai','Maharashtra',402209,8390266064,'amo
 --Update query
 UPDATE Addressbook_DB SET LastName = 'Salunkhe' WHERE FirstName ='A'
 UPDATE Addressbook_DB SET Address ='other location' WHERE LastName = 'Salunke'
-UPDATE Addressbook_DB SET City = 'Raigad' WHERE Address = 'Location'
+UPDATE Addressbook_DB SET City = 'Mumbai' WHERE Address = 'Location'
 
----DLET Query
+---DLETE Query
 DELETE FROM Addressbook_DB WHERE FirstName = 'Amol'
+
+---retrive from city or state
+SELECT * FROM Addressbook_DB WHERE City = 'Mumbai'
+SELECT * FROM Addressbook_DB WHERE State = 'Maharashtra'
+
+
